@@ -1,3 +1,4 @@
+import PokeService from "./Service";
 import Component from "./Component";
 
 class Page extends Component {
