@@ -47,8 +47,6 @@ class Page extends Component {
           this.count -= 10;
           this.urlAPI = `http://pokeapi.co/api/v2/pokemon?limit=10&offset=${this.count}`;
           this.updatePokemons();
-          // container.innerHTML = "";
-          // const pageNew = new Page(container, url);
         }
       }
     );
@@ -64,9 +62,6 @@ class Page extends Component {
         this.count += 10;
         this.urlAPI = `http://pokeapi.co/api/v2/pokemon?limit=10&offset=${this.count}`;
         this.updatePokemons();
-
-        // container.innerHTML = "";
-        // const pageNew = new Page(container, url);
       }
     );
   }
