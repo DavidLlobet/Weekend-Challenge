@@ -28,7 +28,7 @@ class Card extends Component {
     const getOnePokemon = new PokeService(this.url);
     const showOnePokemon = await getOnePokemon.getPokeApi(this.url);
     this.pokemon = showOnePokemon;
-    this.name = showOnePokemon.name;
+    this.name = showOnePokemon.name.toUpperCase();
     this.id = showOnePokemon.id;
     this.type1 = showOnePokemon.types[0].type.name;
     if (showOnePokemon.types[1]) {
