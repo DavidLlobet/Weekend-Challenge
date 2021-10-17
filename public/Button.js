@@ -9,8 +9,9 @@ class Button extends Component {
     super(parentElement, className, tag);
     this.actionOnClick = actionOnClick;
     this.text = text;
-    text.innerHTML = this.text;
+    this.element.innerHTML = this.text;
     this.element.addEventListener("click", this.actionOnClick);
+    this.parentElement.append(this.element);
   }
 }
 
