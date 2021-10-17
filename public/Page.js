@@ -34,6 +34,8 @@ class Page extends Component {
   <button class="button">Detalles</button>
 </header>
 <main class="main">
+ <div class="buttons-Page">
+  </div>
   <ul class="list"></ul>
 </main>`;
   }

@@ -36,7 +36,7 @@ header {
   display: flex;
   width: 300px;
   height: 100%;
-  background-image: url(/public/img/logo.jpg);
+  background-image: url(./img/logo.jpg);
 }
 
 .button {
@@ -47,6 +47,28 @@ header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
   font-size: 15px;
+}
+
+.buttons-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+}
+
+.change-page {
+  border-radius: 50px;
+  margin-right: 10px;
+  background-color: yellow;
+  color: black;
+  width: 80px;
+  text-align: center;
 }
 
 .list {
