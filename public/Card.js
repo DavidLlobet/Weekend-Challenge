@@ -34,6 +34,9 @@ class Card extends Component {
     if (showOnePokemon.types[1]) {
       this.type2 = showOnePokemon.types[1].type.name;
     }
+    if (this.type2 === undefined) {
+      this.type2 = "";
+    }
     this.image = showOnePokemon.sprites.other.dream_world.front_default;
 
     this.createHTML();
