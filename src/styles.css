@@ -60,6 +60,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 50px;
+  margin-top: 20px;
 }
 
 .change-page {
@@ -68,6 +69,7 @@ header {
   background-color: yellow;
   color: black;
   width: 80px;
+  height: 30px;
   text-align: center;
 }
 
@@ -91,6 +93,8 @@ header {
           flex-direction: column;
   margin: 0 15px;
   margin-bottom: 10px;
+  background-color: #33fff3;
+  border-radius: 50px;
 }
 
 .title {
@@ -103,15 +107,18 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 13px;
 }
 
 .number {
-  width: 22px;
-  height: 22px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: green;
   color: white;
   text-align: center;
+  margin-right: 10px;
+  padding: 6px;
 }
 
 .img {
@@ -121,12 +128,15 @@ header {
   margin-bottom: 10px;
 }
 
-.type {
+.type-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: auto;
   height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .type1 {
@@ -163,5 +173,17 @@ header {
   font-size: 20px;
   background-color: yellow;
   border-radius: 50px;
+}
+
+.star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 15px;
+  background-image: url(./img/star.png);
+  width: 30px;
+  height: 30px;
 }
 /*# sourceMappingURL=styles.css.map */

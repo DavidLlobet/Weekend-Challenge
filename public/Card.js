@@ -34,12 +34,14 @@ class Card extends Component {
     if (showOnePokemon.types[1]) {
       this.type2 = showOnePokemon.types[1].type.name;
     }
-    if (this.type2 === undefined) {
-      this.type2 = "";
-    }
+
     this.image = showOnePokemon.sprites.other.dream_world.front_default;
 
     this.createHTML();
+    if (this.type2 === undefined) {
+      this.element.querySelector(".type2").style.display = "none";
+      this.type2 = "";
+    }
   }
 
   createHTML() {
@@ -47,8 +49,9 @@ class Card extends Component {
     <div class="number">${this.id}</div>
     <h2 class="h2">${this.name}</h2>
   </div>
+  <div class="star"></div>
   <img class="img" src="${this.image}" />
-  <div class="type">
+  <div class="type-container">
     <div class="type1">${this.type1}</div>
     <div class="type2">${this.type2}</div>
   </div>`;
