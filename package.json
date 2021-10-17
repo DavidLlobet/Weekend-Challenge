@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass-netlify": "sass src/styles.scss public/styles.css",
-    "sass": "sass src/styles.scss public/styles.css --watch",
+    "sass-netlify": "sass ./src/styles.scss ./public/styles.css",
+    "sass": "sass ./src/styles.scss ./public/styles.css --watch",
     "test": "jest --watchAll --collect-coverage"
   },
   "keywords": [],
