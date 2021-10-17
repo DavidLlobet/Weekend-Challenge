@@ -7,7 +7,7 @@ class PokeService {
 
   async getPokeApi() {
     const response = await fetch(this.urlAPI);
-    const pokemon = await pokemon.json();
+    const pokemon = await response.json();
     return pokemon;
   }
 }
